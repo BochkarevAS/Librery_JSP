@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<description>
+  	</description>
+  	<display-name>SessionFilter</display-name>
+  	<filter-name>SessionFilter</filter-name>
+  	<filter-class>ru.company.filter.SessionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SessionFilter</filter-name>
+  	<url-pattern>/SessionFilter</url-pattern>
+  </filter-mapping>
+  
+  <listener>
+  	<listener-class>ru.company.listener.ContextListener</listener-class>
+  </listener>
+  <listener>
+  	<listener-class>ru.company.listener.SessionListener</listener-class>
+  </listener>
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ImageServlet</display-name>
+  	<servlet-name>ImageServlet</servlet-name>
+  	<servlet-class>ru.company.servlet.ImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>PDFServlet</display-name>
+  	<servlet-name>PDFServlet</servlet-name>
+  	<servlet-class>ru.company.servlet.PDFServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ImageServlet</servlet-name>
+  	<url-pattern>/ImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PDFServlet</servlet-name>
+  	<url-pattern>/PDFServlet</url-pattern>
+  </servlet-mapping>
+  
+   <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+	<jsp-config>
+	    <jsp-property-group>
+	        <description>header and footer settings</description>
+	        <url-pattern>/viwe/*</url-pattern>
+	        <page-encoding>UTF-8</page-encoding>
+	        <include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+	        <include-coda>/WEB-INF/jspf/footer.jspf</include-coda>
+	    </jsp-property-group>
+	</jsp-config>
+    
+</web-app>

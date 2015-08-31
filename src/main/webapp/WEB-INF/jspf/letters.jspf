@@ -1,0 +1,27 @@
+<%@ page import ="ru.company.*" %>
+<%@ page import ="java.util.*" %>
+
+<div id="letters">
+	<jsp:useBean id="lettersList" class="ru.company.LettersList" scope="application" />
+	<% 
+		char[] letterRUS = lettersList.getLetterRUS();
+
+		String lett = null;
+		
+		if (request.getParameter("letter") != null) {
+			lett = request.getParameter("letter");
+		}
+
+		for (int i = 0; i < letterRUS.length; i++) {
+			if (!(lett != null && lett.toUpperCase().charAt(0) == letterRUS[i])) {
+	%>
+			<a href="books.jsp?letter=<%= letterRUS[i] %>"><%= letterRUS[i] %></a>
+	<%
+			} else {
+	%>
+				<a style="color: red;" href="books.jsp?letter=<%= letterRUS[i] %>"><%= letterRUS[i] %></a>
+	<%
+			}
+		}
+	%>
+</div>

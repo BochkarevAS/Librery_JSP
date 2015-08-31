@@ -1,0 +1,96 @@
+body {
+    font-size: small;
+    font: 12px Tahoma, sans-serif;
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+
+header {
+    padding: 20px 0;
+    border: 1px solid black;
+}
+
+#logo {
+	float: left;
+	font-family: sans-serif;
+	border: 1px solid red;
+	padding: 0 20px;
+}
+
+#user {
+	float: left;
+	margin-left: 50px;
+}
+
+#exit {
+	float: right;
+	margin-right: 10px;
+}
+
+.search_form {
+    padding: 20px;
+    text-align: left; 
+}
+
+#letters {
+    margin-left: 270px;
+    padding: 30px;
+}
+
+#letters a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#wrapper {
+    max-width: 960px;
+    height:800px;
+    margin: auto;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+aside {
+    float: left;
+    width: 250px;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-position: inside;
+    font: 14px 'Oswald', sans-serif;
+    padding: 10px;
+    list-style: none; 
+}
+
+section {
+    margin-left: 200px;
+    margin-right: 25px;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+
+table {
+	float: left;
+    margin: 5px;
+}
+
+td {
+	text-align: center;
+	font-size: 12px;
+}

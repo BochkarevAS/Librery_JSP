@@ -1,0 +1,55 @@
+body {
+    font-size: small;
+    font: 12px Tahoma, sans-serif;
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+
+#wrapper {
+	position: absolute;
+	top: 70;
+	right: 0;
+	bottom: 100;
+	left: 0;
+	text-align: center;
+    width: 960px;
+    margin: auto;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+#icon {
+	padding-top: 10px;
+}
+
+p {
+	margin: 50px;
+}
+
+section {
+	width: 400px;
+	margin: auto;
+	padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+table {
+    width: 200px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
